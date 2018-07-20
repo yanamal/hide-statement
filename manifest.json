@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Hide Codility Problem Statement",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "all_frames": true,
+      "css": ["content.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "enabled.png",
+    "default_action": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
