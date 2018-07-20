@@ -3,7 +3,7 @@
   <head>
     <style>
     body {
-      background-color: powderblue;
+      width: 960px;
     }
     a.bookmarklet {
         display: -moz-inline-box;
@@ -28,7 +28,15 @@
 
     <p>An alternative to the chrome extension is to use a bookmarklet:
     <br/>
+      <b>Drag</b> (<u>don't click!</u>) the blue link below <b>to your bookmark bar</b>:
+    <br/>
     <a class="bookmarklet" href="javascript:(function()%7Bdocument.getElementById('brinza-task-description').style.backgroundColor%20%3D%20%22black%22%7D)()">Hide Problem</a>
+    <br>
+      Then, once you have the codility problem loaded, click "Hide Problem" in your bookmark bar. 
     </p>
+    <p>
+      This is less convenient than the chrome extension, since you have to click it every time you reload or change the codility page, e.g. when you change languages.
+    </p>
+    
   </body>
 </html>
